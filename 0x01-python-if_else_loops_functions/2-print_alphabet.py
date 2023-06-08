@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import string
-for letter in string.ascii_lowercase:
-   print(letter, end ="")
+for a in range(97,123):
+    print(f"{a:c}", end='')
