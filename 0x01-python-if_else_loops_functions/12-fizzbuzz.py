@@ -6,8 +6,8 @@ def fizzbuzz():
             str += f"{a} "
             continue
         if a % 3 == 0:
-            str +="Fizz"
+            str += "Fizz"
         if a % 5 == 0:
-            str +="Buzz"
-        str += " "
+            str += "Buzz"
+        str += ' '
     print(str)
