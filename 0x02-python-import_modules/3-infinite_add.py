@@ -4,5 +4,5 @@ if __name__ != "__main__":
 from sys import argv
 s = 0
 for a in argv[1:]:
-    s+=int(a)
+    s += int(a)
 print(s)
