@@ -4,9 +4,10 @@ def roman_to_int(roman_string):
     number = 0
     if type(roman_string) != str or roman_string == None:
         return number
-    for i in range(len(roman_string)):
-        if roman_string[i] == 'I' and i < len(roman_string) - 1 and roman_string[i+1] in ('V', 'X'):
+    r = roman_string
+    for i in range(len(r)):
+        if r[i] == 'I' and i < len(r) - 1 and r[i+1] in ('V', 'X'):
             number -= 1
         else:
-            number += romans[roman_string[i]]
+            number += romans[r[i]]
     return number
