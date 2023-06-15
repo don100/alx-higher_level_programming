@@ -6,8 +6,8 @@ def roman_to_int(roman_string):
         return number
     r = roman_string
     for i in range(len(r)):
-        if r[i] == 'I' and i < len(r) - 1 and r[i+1] in ('V', 'X'):
-            number -= 1
+        if i < len(r) - 1 and romans[r[i]] < romans[r[i+1]]:
+            number -= romans[r[i]]
         else:
             number += romans[r[i]]
     return number
