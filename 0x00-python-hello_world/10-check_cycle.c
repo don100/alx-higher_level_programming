@@ -14,11 +14,9 @@ int check_cycle(listint_t *list)
     current = list->next;
     while (current != NULL)
     {
-        printf("%i %i ***", current->n, head->n);
-        if(head == current && current->next == NULL){
-            return 1;
-        }
+        if(head == current && current->next == NULL)
+            return (1);
         current = current->next;
     }
-        return 0;
+        return (0);
 }
