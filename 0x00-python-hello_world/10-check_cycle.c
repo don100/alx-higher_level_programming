@@ -8,9 +8,11 @@
  */
 int check_cycle(listint_t *list)
 {
-	const listint_t *current;
+    const listint_t *current;
     const listint_t *head;
     head = list;
+    if (!list)
+        return (0);
     current = list->next;
     while (current != NULL)
     {
