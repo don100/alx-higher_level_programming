@@ -3,8 +3,8 @@ def safe_print_list(my_list=[], x=0):
     try:
         for i in range(x):
             print(my_list[i], end='')
-        return i+1
-    except:
-        return i
-    finally:
         print("")
+        return x
+    except:
+        print("")
+        return len(my_list)
