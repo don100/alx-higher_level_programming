@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""vide"""
+"""class Square"""
 
 class Square:
+    """class vide"""
     pass
