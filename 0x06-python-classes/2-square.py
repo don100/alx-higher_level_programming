@@ -9,4 +9,4 @@ class Square:
             raise Exception("size must be an integer")
         if size < 0:
             raise Exception("size must be >= 0")
-        self.__size = size
+        self._size = size
