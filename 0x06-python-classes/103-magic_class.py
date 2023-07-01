@@ -2,6 +2,8 @@
 """class MagicClass"""
 
 
+import math
+
 class MagicClass:
     """Content class MagicClass."""
     def __init__(self, radius=0):
