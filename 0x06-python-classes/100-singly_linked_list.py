@@ -32,22 +32,22 @@ class Node:
             raise Exception("next_node must be a Node object")
         self.__next_node = value
 
+
 """class SinglyLinkedList"""
 
 
 class SinglyLinkedList:
     """Content class SinglyLinkedList."""
     def __init__(self):
-        self.__head  = None
+        self.__head = None
 
     def sorted_insert(self, value):
         new_node = Node(value)
         current = self.__head
-        prev =  None
+        prev = None
 
         if self.__head is None:
             self.__head = new_node
-            #self.__head.__next_node = None
         else:
             while current.next_node is not None:
                 if current.data >= value:
@@ -61,7 +61,7 @@ class SinglyLinkedList:
                     break
                 prev = current    
                 current = current.next_node
-            if current is not None:    
+            if current is not None:
                 current.next_node = new_node
 
     def __str__(self):
