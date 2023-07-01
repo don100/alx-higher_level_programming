@@ -59,7 +59,7 @@ class SinglyLinkedList:
                     else:
                         current = prev
                     break
-                prev = current    
+                prev = current
                 current = current.next_node
             if current is not None:
                 current.next_node = new_node
@@ -68,7 +68,7 @@ class SinglyLinkedList:
         all_data = ""
         current = self.__head
         while current is not None:
-            all_data  = all_data + str(current.data)
+            all_data = all_data + str(current.data)
             if current.next_node is not None:
                 all_data += "\n"
             current = current.next_node
