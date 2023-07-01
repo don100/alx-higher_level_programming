@@ -41,22 +41,17 @@ class SinglyLinkedList:
     def __init__(self):
         self.__head = None
 
-
     def sorted_insert(self, value):
         new_node = Node(value)
         current = self.__head
         prev = None
-
         if self.__head is None:
             self.__head = new_node
         else:
             while current is not None:
                 if current.data >= value:
-                    #new_node.next_node = current
                     if prev is None:
-                        #new_node.next_node = current
                         self.__head = new_node
-                        #current = None
                     else:
                         prev.next_node = new_node
                     new_node.next_node = current
