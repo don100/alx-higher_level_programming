@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import sys
 """class Node"""
 
 
@@ -68,8 +69,6 @@ class SinglyLinkedList:
         all_data = ""
         current = self.__head
         while current is not None:
-            all_data = all_data + str(current.data)
-            if current.next_node is not None:
-                all_data += "\n"
+            sys.stdout.write(f"{str(current.data)}\n")
             current = current.next_node
-        return all_data
+        return ''
