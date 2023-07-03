@@ -13,8 +13,8 @@ class Rectangle:
             raise Exception("height must be an integer")
         if height < 0:
             raise Exception("height must be >= 0")
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
