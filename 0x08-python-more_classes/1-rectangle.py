@@ -1,34 +1,41 @@
-    def __init__(self, size=0, position=(0, 0)):
-        if type(size) != int:
-            raise Exception("size must be an integer")
-        if size < 0:
-            raise Exception("size must be >= 0")
-        if (len(position) != 2 or type(position[0]) != int or
-                type(position[1]) != int or position[0] < 0 or
-                position[1] < 0):
-            raise Exception("position must be a tuple of 2 positive integers")
-        self.__size = size
-        self.__position = position
+#!/usr/bin/python3
+"""class Rectangle"""
+
+
+class Rectangle:
+    """class vide"""
+    def __init__(self, width=0, height=0):
+        if type(width) != int:
+            raise Exception("width must be an integer")
+        if width < 0:
+            raise Exception("width must be >= 0")
+        if type(height) != int:
+            raise Exception("height must be an integer")
+        if height < 0:
+            raise Exception("height must be >= 0")
+        self.__width = width
+        self.__height = height
 
     @property
-    def size(self):
-        return self.__size
+    def width(self):
+        return self.__width
 
-    @size.setter
-    def size(self, value):
+    @width.setter
+    def width(self, value):
         if type(value) != int:
-            raise Exception("size must be an integer")
+            raise Exception("width must be an integer")
         if value < 0:
-            raise Exception("size must be >= 0")
-        self.__size = value
+            raise Exception("width must be >= 0")
+        self.__width = value
 
     @property
-    def position(self):
-        return self.__position
+    def height(self):
+        return self.__height
 
-    @position.setter
-    def position(self, value):
-        if (len(value) != 2 or type(value[0]) != int or
-                type(value[1]) != int or value[0] < 0 or value[1] < 0):
-            raise Exception("position must be a tuple of 2 positive integers")
-        self.__position = value
+    @height.setter
+    def height(self, value):
+        if type(value) != int:
+            raise Exception("height must be an integer")
+        if value < 0:
+            raise Exception("height must be >= 0")
+        self.__height = value
