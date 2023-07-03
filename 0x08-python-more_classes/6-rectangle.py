@@ -4,7 +4,8 @@
 
 class Rectangle:
     """class vide"""
-  number_of_instances = 0
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         if type(width) != int:
             raise TypeError("width must be an integer")
@@ -16,7 +17,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = height
         self.__width = width
-        number_of_instances++
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -64,5 +65,5 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        number_of_instances--
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
