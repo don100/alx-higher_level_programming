@@ -5,14 +5,14 @@
 class Rectangle:
     """class vide"""
     def __init__(self, width=0, height=0):
-        if type(width) != int:
-            raise Exception("width must be an integer")
-        if width < 0:
-            raise Exception("width must be >= 0")
         if type(height) != int:
             raise Exception("height must be an integer")
         if height < 0:
             raise Exception("height must be >= 0")
+        if type(width) != int:
+            raise Exception("width must be an integer")
+        if width < 0:
+            raise Exception("width must be >= 0")
         self.__height = height
         self.__width = width
 
