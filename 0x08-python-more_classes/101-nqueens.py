@@ -21,7 +21,7 @@ for i in range(N):
     for j in range(N):
         if i == j or i+j == N-1:
             continue
-        queen.append([i, j])
+        queen.append([j, i])
         a += 1
         if a % N == 0:
             print(str(queen))
