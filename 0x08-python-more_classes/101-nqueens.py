@@ -7,7 +7,7 @@ if len(sys.argv) != 2:
 
 try:
     N = int(sys.argv[1])
-except:
+except Exception:
     print("N must be a number")
     exit(1)
 
@@ -22,7 +22,7 @@ for i in range(N):
         if i == j or i+j == N-1:
             continue
         queen.append([i, j])
-        a+=1
-        if a%N == 0:
+        a += 1
+        if a % N == 0:
             print(str(queen))
             queen = []
