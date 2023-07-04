@@ -4,6 +4,8 @@ import sys
 
 def safe_function(fct, *args):
     try:
+        if args is None:
+            raise Exception
         return fct(args[0], args[1])
     except Exception as e:
         print(f"Exception: {e}", file=sys.stderr)
