@@ -1,5 +1,4 @@
-'''
-doctest python
+''' doctest python '''
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(1, 2)
 3
@@ -21,4 +20,3 @@ doctest python
 101
 >>> add_integer(100, 1)
 101
-'''
