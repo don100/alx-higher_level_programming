@@ -1,4 +1,6 @@
-a
-b
-c
-d
+    '''
+    >>> add_integer(1, 2):
+    3
+    >>> add_integer(100, 2):
+    102
+    '''
