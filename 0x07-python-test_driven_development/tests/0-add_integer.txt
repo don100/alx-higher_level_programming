@@ -1,6 +1,7 @@
-    '''
-    >>> add_integer(1, 2):
-    3
-    >>> add_integer(100, 2):
-    102
-    '''
+'''
+>>> from ./2-matrix_divided.py import add_integer
+>>> add_integer(1, 2):
+3
+>>> add_integer(100, 2):
+102
+'''
