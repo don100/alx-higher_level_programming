@@ -4,6 +4,8 @@ a and b must be integers or floats
 a and b must be first casted to
 Returns an integer: the addition of a and b
 You are not allowed to import '''
+
+
 def add_integer(a, b=98):
     '''Prototype: def add_integer(a, b=98):
     a and b must be integers or floats,
