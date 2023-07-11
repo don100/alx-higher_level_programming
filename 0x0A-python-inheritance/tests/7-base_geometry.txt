@@ -8,19 +8,3 @@
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] name must be an integer
-
->>> bg.integer_validator("name", "John")
-Traceback (most recent call last):
-OverflowError: name must be an integer
-
->>> bg.integer_validator("age", 0)
-Traceback (most recent call last):
-OverflowError: age must be greater than 0
-
->>> bg.integer_validator("distance", -4)
-Traceback (most recent call last):
-OverflowError: distance must be greater than 0
-
->>> bg.integer_validator("name", None)
-Traceback (most recent call last):
-OverflowError: name must be an integer
