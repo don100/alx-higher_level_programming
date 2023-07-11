@@ -4,4 +4,12 @@
 
 class MyInt(int):
     """class MyInt"""
-    pass
+
+    def __eq__(self, other):
+        """class MyInt"""
+        return not(int(self) == other)
+
+    def __ne__(self, other):
+        """class MyInt"""
+        return not(int(self) != other)
+
