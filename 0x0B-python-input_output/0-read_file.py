@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' 0-read_file.py '''
 
+
 import sys
 
 
