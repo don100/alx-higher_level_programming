@@ -28,7 +28,13 @@
 [TypeError] name must be an integer
 
 >>> try:
-...     bg.integer_validator("name", float('nan'))
+...     bg.integer_validator("price", 1.5)
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] name must be an integer
+[TypeError] price must be an integer
+
+>>> try:
+...     bg.integer_validator("marge", -1.5)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] marge must be an integer
