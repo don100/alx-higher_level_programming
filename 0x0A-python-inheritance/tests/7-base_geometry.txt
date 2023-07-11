@@ -34,7 +34,7 @@
 [TypeError] price must be an integer
 
 >>> try:
-...     bg.integer_validator("marge", -1.5)
+...     bg.integer_validator("test", [1, 3, 5])
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] marge must be an integer
+[TypeError] test must be an integer
