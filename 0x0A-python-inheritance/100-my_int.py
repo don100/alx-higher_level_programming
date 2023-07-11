@@ -6,4 +6,4 @@ class MyInt(int):
     """class MyInt"""
 
     def __eq__(self, other):
-        return True
+        return not (int(self) == other)
