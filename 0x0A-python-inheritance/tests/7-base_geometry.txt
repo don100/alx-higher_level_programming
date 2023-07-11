@@ -47,6 +47,12 @@
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] test must be an integer
 
+>>> try:
+...     bg.integer_validator("test", {1, 3, 5})
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] test must be an integer
+
 >>> bg.integer_validator("x", float('nan'))
 Traceback (most recent call last):
 TypeError: x must be an integer
