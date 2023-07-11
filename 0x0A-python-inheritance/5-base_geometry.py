@@ -2,6 +2,6 @@
 """5-base_geometry.py"""
 
 
-class BaseGeometry(list):
+class BaseGeometry():
     """class BaseGeometry"""
     pass
