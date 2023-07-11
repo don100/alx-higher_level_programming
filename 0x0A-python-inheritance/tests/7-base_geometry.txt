@@ -53,6 +53,6 @@
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] test must be an integer
 
->>> bg.integer_validator("x", float('nan'))
+>>> bg.integer_validator("name", True)
 Traceback (most recent call last):
-TypeError: x must be an integer
+TypeError: name must be an integer
