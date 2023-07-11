@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import sys
 ''' 0-read_file.py '''
 
 
 def read_file(filename=""):
-    '''  Read file '''
+    ''' Read file '''
+    import sys
     with open(filename, encoding="utf-8") as f:
         read_data = f.read()
     print(read_data, file=sys.stdout)
