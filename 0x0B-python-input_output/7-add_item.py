@@ -11,7 +11,7 @@ filename = "add_item.json"
 
 try:
     list_args = list(load_from_json_file(filename)) + list_args
-except IOError:
+except FileNotFoundError:
     save_to_json_file([], filename)
     exit()
 
