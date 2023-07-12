@@ -16,6 +16,6 @@ class Student:
             for i in self.__dict__.keys():
                 if i in attrs:
                     mydict[i] = self.__dict__.get(i)
-            return mydict
+            return dict(mydict)
         else:
             return self.__dict__
