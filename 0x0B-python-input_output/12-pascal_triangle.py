@@ -10,7 +10,8 @@ def pascal_triangle(n):
         return pascal
     for i in range(n):
         for j in range(i):
-            items.append(pascal[i-1][j] + (pascal[i-1][j-1] if j-1 >= 0 else 0))
+            items.append(pascal[i-1][j] +
+                         (pascal[i-1][j-1] if j-1 >= 0 else 0))
         items.append(1)
         pascal.append(items)
         items = []
