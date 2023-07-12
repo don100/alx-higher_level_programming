@@ -6,9 +6,9 @@ class Student:
     """class"""
 
     def __init__(self, first_name, last_name, age):
-        self.first_name = first_name
-        self.last_name = last_name
         self.age = age
+        self.last_name = last_name
+        self.first_name = first_name
 
     def to_json(self):
         return self.__dict__
@@ -16,8 +16,8 @@ class Student:
     def to_json(self, attrs=None):
         if attrs:
             mydict = {}
-            for i in attrs:
-                if i in self.__dict__.keys():
+            for i in self.__dict__.keys():
+                if i in attrs:
                     mydict[i] = self.__dict__.get(i)
             return mydict
         else:
