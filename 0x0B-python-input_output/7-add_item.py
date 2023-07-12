@@ -10,9 +10,8 @@ list_args = sys.argv[1:]
 filename = "add_item.json"
 
 try:
-    load_from_json_file(filename)
+    list_args = list(load_from_json_file(filename)) + list_args
 except IOError:
     save_to_json_file([], filename)
     exit()
-list_args = list(load_from_json_file(filename)) + list_args
 save_to_json_file(list_args, filename)
