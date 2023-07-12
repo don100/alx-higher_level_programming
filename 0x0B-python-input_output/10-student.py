@@ -11,7 +11,7 @@ class Student:
         self.first_name = first_name
 
     def to_json(self, attrs=None):
-        if attrs:
+        if attrs is not None:
             mydict = {}
             for i in self.__dict__.keys():
                 if i in attrs:
