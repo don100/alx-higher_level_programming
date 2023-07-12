@@ -12,7 +12,7 @@ if __name__ == "__main__":
     filename = "add_item.json"
     
     try:
-        list_args = list(load_from_json_file(filename)) + list_args
+        list_args = load_from_json_file(filename).extend(list_args)
     except FileNotFoundError:
         save_to_json_file([], filename)
         exit()
