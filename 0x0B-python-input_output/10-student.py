@@ -10,9 +10,6 @@ class Student:
         self.last_name = last_name
         self.first_name = first_name
 
-    def to_json(self):
-        return self.__dict__
-
     def to_json(self, attrs=None):
         if attrs:
             mydict = {}
