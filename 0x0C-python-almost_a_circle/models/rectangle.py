@@ -66,14 +66,11 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        rec = ""
-        if self.__width == 0 or self.__height == 0:
-            print(rec)
-        else:
-            for i in range(self.__height):
-                rec += str('#') * self.__width
-                rec += "\n" if i != self.__height - 1 else ""
-            print(rec)
+        if self.y > 0:
+            print("\n" * (self.y - 1))
+        for i in range(self.height):
+            print(" " * self.x, end='')
+            print("#" * self.width)
 
     def __str__(self):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
