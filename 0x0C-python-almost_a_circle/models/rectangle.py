@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """class Rectangle"""
 
-
 from base import Base
-
 
 class Rectangle(Base):
     """class"""
