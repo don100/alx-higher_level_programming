@@ -5,7 +5,7 @@ if (args.length <= 2) {
 } else {
   args.forEach((val, index) => {
     if (index >= 2) {
-        console.log(val);
-}
-});
+    console.log(val);
+    }
+  });
 }
