@@ -1,3 +1,7 @@
 #!/usr/bin/node
 const args = process.argv;
-console.log(args[2] + ' is ' + args[3]);
+if(parseInt(args[2])) {
+  console.log('My number: ' + args[2])
+} else {
+  console.log('Not a number')
+}
