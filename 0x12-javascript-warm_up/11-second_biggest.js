@@ -2,7 +2,7 @@
 const args = process.argv;
 
 if(args.lenght <= 3) {
-  console.log(1);
+  console.log(0);
 } else {
   let max1 = args[2];
   let max2 = args[3];
