@@ -9,7 +9,7 @@ if (args.length <= 3) {
   if (parseInt(args[3] > parseInt(args[2])) {
     max1 = parseInt(args[3]);
     max2 = parseInt(args[2]);
-
+  }
   for (let i = 4; i < args.length; i++) {
     if (max2 < parseInt(args[i])) {
       if (max1 < parseInt(args[i])) {
