@@ -6,7 +6,7 @@ if (args.length <= 3) {
 } else {
   let max1 = parseInt(args[2]);
   let max2 = parseInt(args[3]);
-  if (parseInt(args[3] > parseInt(args[2])) {
+  if (parseInt(args[3]) > parseInt(args[2])) {
     max1 = parseInt(args[3]);
     max2 = parseInt(args[2]);
   }
