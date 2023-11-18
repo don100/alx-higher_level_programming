@@ -12,9 +12,5 @@ if (args.length <= 3) {
       max1 = parseInt(args[i]);
     }
   }
-  if(max2) {
-    console.log(max2);
-  } else {
-    console.log(0);
-  }
+  console.log(max2);
 }
