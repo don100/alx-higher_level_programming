@@ -5,7 +5,7 @@ if (args.length <= 3) {
   console.log(0);
 } else {
   let max1 = parseInt(args[2]);
-  let max2 = parseInt(args[2]);
+  let max2 = parseInt(args[3]);
   for (let i = 3; i < args.length; i++) {
     if (max2 < parseInt(args[i])) {
       if (max1 < parseInt(args[i])) {
