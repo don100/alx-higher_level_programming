@@ -1,2 +1,2 @@
 #!/usr/bin/node
-const exports.myVar = 333;
+default exports.myVar = 333;
