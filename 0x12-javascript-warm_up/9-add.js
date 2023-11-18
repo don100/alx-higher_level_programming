@@ -1,3 +1,7 @@
 #!/usr/bin/node
 const args = process.argv;
-console.log(args[2] + args[3]);
+function add(a, b){
+  console.log(a + b);
+}
+
+add(args[2] + args[3]);
