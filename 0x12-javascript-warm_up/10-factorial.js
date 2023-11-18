@@ -7,7 +7,7 @@ if (parseInt(a)) {
   for (let i = 1; i <= parseInt(a); i++) {
     x *= i;
   }
-    console.log(x);
+  console.log(x);
 } else {
   console.log(1);
 }
