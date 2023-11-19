@@ -29,8 +29,11 @@ module.exports = class Rectangle {
     this.height = this.height * 2;
   }
 
-  charPrint (c = 'X') {
+  charPrint (c) {
     let side = '';
+    if (!c) {
+      c = 'X';
+    }
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
         side += c;
