@@ -1,3 +1,6 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+let count = 0;
+exports.logMe = function (item) {
+  console.log(count + ': ' +item);
+  count += 1;
+};
