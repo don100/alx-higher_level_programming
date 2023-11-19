@@ -1,3 +1,6 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+const logMe = require('./9-logme').logMe;
+
+logMe("Hello");
+logMe("Best");
+logMe("School");
