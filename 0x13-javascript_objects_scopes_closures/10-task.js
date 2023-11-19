@@ -1,3 +1,4 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+exports.converter = function (base) {
+  return function (nb) { return nb.toString(base) };
+};
