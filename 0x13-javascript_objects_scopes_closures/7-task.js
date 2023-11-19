@@ -1,3 +1,10 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+exports.nbOccurences = function (list, searchElement) {
+    let nbOccurences = 0;
+    for (let i of list) {
+        if (i == searchElement) {
+            nbOccurences += 1;
+        }
+    }
+    return nbOccurences;
+};
