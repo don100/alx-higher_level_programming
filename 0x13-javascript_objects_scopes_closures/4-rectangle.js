@@ -28,4 +28,15 @@ module.exports = class Rectangle {
     this.width = this.width * 2;
     this.height = this.height * 2;
   }
+
+  charPrint (c = 'X') {
+    let side = '';
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        side += c;
+      }
+      console.log(side);
+      side = '';
+    }
+  }
 };
