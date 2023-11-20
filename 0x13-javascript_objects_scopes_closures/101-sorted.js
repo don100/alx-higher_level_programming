@@ -1,13 +1,13 @@
 #!/usr/bin/node
 const dict = require('./101-data').dict;
 
-let v = [...new Set(Object.values(dict))];
+const v = [...new Set(Object.values(dict))];
 let a = [];
-let d = {};
-for (let i of v){
-  for (let key in dict) {
-    //console.log("Key: " + key + ", Value: " + dict[key]);
-    if (dict[key] == i){
+const d = {};
+for (const i of v) {
+  for (const key in dict) {
+    // console.log("Key: " + key + ", Value: " + dict[key]);
+    if (dict[key] === i) {
       a.push(key);
     }
   }
