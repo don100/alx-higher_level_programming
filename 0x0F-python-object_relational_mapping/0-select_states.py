@@ -2,7 +2,7 @@
 import MySQLdb
 import sys
 
-MY_HOST = "localhost:3306"
+MY_HOST = "localhost"
 username = sys.argv[1]
 password = sys.argv[2]
 name = sys.argv[3]
