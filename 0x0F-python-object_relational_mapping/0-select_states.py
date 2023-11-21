@@ -17,7 +17,7 @@ db = MySQLdb.connect(host=MY_HOST,    # your host, usually localhost
 cur = db.cursor()
 
 # Use all the SQL you like
-cur.execute("SELECT * FROM states")
+cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
 # print all the first cell of all the rows
 for row in cur.fetchall():
