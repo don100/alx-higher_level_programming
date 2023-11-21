@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 import MySQLdb
+import sys
 
 MY_HOST = "localhost"
-MY_USER = "root"
-MY_PASS = "root"
-MY_DB = "hbtn_0e_0_usa"
+MY_USER = sys.argv[0]
+MY_PASS = sys.argv[1]
+MY_DB = sys.argv[2]
 
 db = MySQLdb.connect(host=MY_HOST,    # your host, usually localhost
                      user=MY_USER,         # your username
