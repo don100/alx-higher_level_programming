@@ -20,4 +20,3 @@ for row in cur.fetchall():
     print(f"({row[0]}, '{row[1]}')")
 
 db.close()
-
