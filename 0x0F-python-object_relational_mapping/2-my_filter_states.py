@@ -17,8 +17,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states \
-    WHERE states.name = sys.argv[4] \
+    cur.execute(f"SELECT * FROM states \
+    WHERE states.name = {sys.argv[4]} \
     ORDER BY states.id ASC")
 
     for row in cur.fetchall():
