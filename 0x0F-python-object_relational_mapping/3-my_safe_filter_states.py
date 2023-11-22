@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     cur.execute("SELECT * FROM states \
     WHERE states.name LIKE BINARY '{}' \
-    ORDER BY states.id ASC".format(sql.Identifier(sys.argv[4])))
+    ORDER BY states.id ASC".format(MySQLdb.escape_string(sys.argv[4])))
 
     for row in cur.fetchall():
         print(row)
