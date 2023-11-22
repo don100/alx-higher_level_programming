@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY states.id LIKE 'N%'")
+    cur.execute("SELECT * FROM states ORDER BY states.id WHERE name LIKE 'N%'")
 
     for row in cur.fetchall():
         print(row)
