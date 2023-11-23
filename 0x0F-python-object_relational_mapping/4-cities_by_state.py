@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM cities INNER JOIN states ON \
+    cur.execute("SELECT * FROM states INNER JOIN cities ON \
     states.id=cities.id ORDER BY cities.id ASC")
 
     for row in cur.fetchall():
