@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute("SELECT * FROM cities LEFT JOIN states ON \
-    states.id=cities.id ORDER BY cities.id ASC")
+    cities.id=states.id ORDER BY cities.id ASC")
 
     for row in cur.fetchall():
         print(row)
