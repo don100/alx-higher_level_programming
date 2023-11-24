@@ -26,9 +26,4 @@ if __name__ == "__main__":
 
     print(', '.join(''.join(i) for i in cur.fetchall()))
 
-    """
-    for i, row in cur.fetchall():
-        print(row[1], end = ', ' if i != len(cur.fetchall()) - 1 else '\n')
-    """
-
     db.close()
