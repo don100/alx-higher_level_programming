@@ -24,7 +24,7 @@ if __name__ == "__main__":
     WHERE states.name LIKE BINARY '%s' \
     ORDER BY cities.id ASC" % (sys.argv[4], ))
 
-    print(', '.join(cur.fetchall()))
+    print(', '.join(''.join(i) for i in cur.fetchall()))
 
     """
     for i, row in cur.fetchall():
