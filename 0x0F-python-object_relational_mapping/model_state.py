@@ -15,5 +15,3 @@ class State(Base):
 
     def __repr__(self):
         return "<State(name='%s')>" % (self.name,)
-
-
