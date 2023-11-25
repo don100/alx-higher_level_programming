@@ -14,6 +14,6 @@ class State(Base):
     name = Column(String, nullable=False)
 
     def __repr__(self):
-    return "<State(name='%s')>" % (self.name,)
+        return "<State(name='%s')>" % (self.name,)
 
 
