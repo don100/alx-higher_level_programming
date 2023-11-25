@@ -11,7 +11,7 @@ class State(Base):
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
+    name = Column(String(128), nullable=False)
 
     def __repr__(self):
         return "<State(name='%s')>" % (self.name,)
