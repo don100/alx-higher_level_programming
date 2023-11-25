@@ -2,12 +2,12 @@
 """ 0x0F-python-object_relational_mapping """
 
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
-from sqlalchemy import Column, Integer, String
-
 class State(Base):
+    """ class """
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
