@@ -12,7 +12,10 @@ if __name__ == "__main__":
                                   sys.argv[3]), pool_pre_ping=True)
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
-    for state in session.query(State).order_by(State.id).filter(
-                                               State.name.like('%a%')):
-        print("{}: {}".format(state.id, state.name))
+    count = session.query(State).order_by(State.id).filter(
+                                               State.name.like(sys.argv[4])).count()
+    if count:
+        print("{}".format(count))
+    else:
+        print('Not found')
     session.close()
