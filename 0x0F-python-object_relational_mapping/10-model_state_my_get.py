@@ -20,7 +20,3 @@ if __name__ == "__main__":
     else:
         print('Not found')
     session.close()
-
-    for state in session.query(State).order_by(State.id).filter(
-                                               State.name.like('%a%')):
-        print("{}: {}".format(state.id, state.name))
