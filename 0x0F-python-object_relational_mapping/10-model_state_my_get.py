@@ -14,7 +14,7 @@ if __name__ == "__main__":
     session = Session(engine)
     id_state = session.query(State).filter(
         State.name.like(
-            sys.argv[4])).first()[1]
+            sys.argv[4])).first()
     if id_state:
         print("{}".format(id_state))
     else:
