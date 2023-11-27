@@ -16,7 +16,7 @@ if __name__ == "__main__":
         State.name.like(
             sys.argv[4]))
     if state:
-        print("{}".format(state.id))
+        print("{}".format(state))
     else:
         print('Not found')
     session.close()
