@@ -3,7 +3,7 @@
 
 import sys
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import (create_engine), insert
 from sqlalchemy.orm import Session
 
 if __name__ == "__main__":
@@ -12,5 +12,5 @@ if __name__ == "__main__":
                                   sys.argv[3]), pool_pre_ping=True)
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
-    state = session.insert(State).values(name="Louisiana",)
+    state = insert(State).values(name="Louisiana",)
     session.close()
