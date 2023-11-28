@@ -13,4 +13,5 @@ if __name__ == "__main__":
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
     state = insert(State).values(name="Louisiana",)
+    print(state.id)
     session.close()
