@@ -15,5 +15,5 @@ if __name__ == "__main__":
     stmt = insert(State).values(name="Louisiana")
     with engine.connect() as conn:
         state = conn.execute(stmt)
-    print(state)
+    print(state.id)
     session.close()
