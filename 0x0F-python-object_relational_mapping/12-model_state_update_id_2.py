@@ -17,4 +17,5 @@ if __name__ == "__main__":
         where(State.id == 2).\
     conn = engine.connect()
     state = conn.execute(stmt)
+    
     session.close()
