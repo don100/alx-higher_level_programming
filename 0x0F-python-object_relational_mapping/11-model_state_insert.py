@@ -12,7 +12,7 @@ if __name__ == "__main__":
                                   sys.argv[3]), pool_pre_ping=True)
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
-    state_id = session.execute(insert(State).values(name="Louisiana").returning(State.id)
+    state_id = session.execute(insert(State).values(name="Louisiana").returning(State.id))
     print(state_id)
 
     session.close()
