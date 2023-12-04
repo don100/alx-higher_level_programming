@@ -16,6 +16,6 @@ if __name__ == "__main__":
         values(name='New Mexico').\
         where(State.id == 2).\
     conn = engine.connect()
-    state = conn.execute(stmt)
+    state = engine.execute(stmt)
 
     session.close()
