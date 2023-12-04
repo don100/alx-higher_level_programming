@@ -12,6 +12,7 @@ if __name__ == "__main__":
                                   sys.argv[3]), pool_pre_ping=True)
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
-    session.execute(update(State).where(State.id == 2).values(name='New Mexico'))
+    session.execute(update(State).where(State.id == 2)\
+                    .values(name='New Mexico'))
     session.commit()
     session.close()
