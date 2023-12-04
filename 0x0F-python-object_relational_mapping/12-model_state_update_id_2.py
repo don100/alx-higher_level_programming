@@ -15,6 +15,5 @@ if __name__ == "__main__":
     stmt = update(State).\
         values(name='New Mexico').\
         where(State.id == 2).\
-
     session.commit()
     session.close()
