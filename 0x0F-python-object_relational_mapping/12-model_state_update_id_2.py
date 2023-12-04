@@ -15,7 +15,6 @@ if __name__ == "__main__":
     stmt = update(State).\
         values(name='New Mexico').\
         where(State.id == 2).\
-    conn = engine.connect()
-    state = engine.execute(stmt)
 
+    session.commit()
     session.close()
