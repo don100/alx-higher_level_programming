@@ -14,7 +14,7 @@ if __name__ == "__main__":
     session = Session(engine)
     session.execute(
         delete(State).where(
-            State.id == 2).values(
-            name='New Mexico'))
+            State.id == 2).filter(
+            State.name.like('%a%'))
     session.commit()
     session.close()
