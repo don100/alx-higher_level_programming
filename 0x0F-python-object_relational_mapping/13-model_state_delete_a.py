@@ -13,8 +13,7 @@ if __name__ == "__main__":
     """Base.metadata.create_all(engine)"""
     session = Session(engine)
     session.execute(
-        delete(State).where(
-            State.id == 2).filter(
+        delete(State).filter(
             State.name.like('%a%'))
     session.commit()
     session.close()
